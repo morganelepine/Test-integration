@@ -1,0 +1,62 @@
+// Variable overrides first
+$danger: #d51125;
+$primary: #145a97;
+$primary-emphasis: #002a5c;
+$enable-shadows: true;
+$prefix: "mo-";
+$font-family-sans-serif: 'Open Sans', sans-serif;
+$grid-columns: 14 !default;
+$h1-font-size: 48px;
+$h2-font-size: 36px;
+$h3-font-size: 32px;
+$small-font-size: 11px;
+$position-values: (
+    0: 0,
+    50: 50%,
+    80: 80%,
+    100: 100%
+);
+$form-check-input-checked-color: #d51125;
+$form-check-input-checked-bg-color: white;
+
+//---HEADER
+#info{
+    font-size: 18px;
+}
+
+#button{
+    width: 260px;
+    height: 100px;
+}
+
+//---CORPS
+
+p, li{
+    font-size: 22px;
+}
+
+p{
+    font-weight: 300;
+}
+
+#image{
+    box-shadow: 20px 20px #002a5c;
+}
+
+//---FORMULAIRE
+
+#form-details{
+    font-size: 10px;
+}
+
+//---FOOTER
+
+#footer{
+    font-size: 12px;
+    line-height: 16px; 
+}
+
+// Then import Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
