@@ -10,68 +10,74 @@ $h1-font-size: 48px;
 $h2-font-size: 36px;
 $h3-font-size: 32px;
 $small-font-size: 11px;
+$input-btn-font-size: 18px;
 $position-values: (
     0: 0,
+    5: 5%,
+    10: 10%,
+    20: 20%,
+    25: 25%,
     50: 50%,
+    60: 60%,
+    70: 70%,
     80: 80%,
+    85: 85%,
+    90: 90%,
     100: 100%
 );
 $form-check-input-checked-color: $danger;
 $form-check-input-checked-bg-color: white;
 
 
-//Pour  lancer la compilation automatique du fichier SCSS : $ sass --watch scss:css
+//Pour lancer la compilation automatique du fichier SCSS : sass --watch scss:css  
 
-//---HEADER
-#info{
-    font-size: 18px;
+#buttonForm:hover{
+    background-color: white;
+    color: $danger;
 }
 
-#button{
-    width: 260px;
-    height: 100px;
+#price{
+    background-color: $danger;
+    color: white; 
+    border: none;
+}
+#price:hover{
+    background-color: $primary-emphasis;
+    color: white;
+    transition-duration: 500ms;
+    cursor: pointer;
 }
 
-//---CORPS
-
-p, li{
-    font-size: 22px;
+#location{
+    background-color: #d5112520;
+    color: $danger;
+    font-weight: 600;
+}
+#location:hover{
+    background-color: $danger;
+    color: white;
+    transition-duration: 500ms;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-p{
-    font-weight: 300;
+#form{
+    position: absolute;
+    top: 60%;
+    right: 5%;
+    width: 30%;
 }
 
-#image{
-    box-shadow: 20px 20px #002a5c;
-}
+/*ne s'exécute que quand la largeur d'écran est <= 991.98px*/
 
-//---FORMULAIRE
-
-#form-details{
-    font-size: 10px;
-}
-
-//---FOOTER
-
-#footer{
-    font-size: 12px;
-    line-height: 16px; 
-}
-
-/*ne s'exécute que quand la largeur d'écran est <= 1100px*/
-
-@media screen and (max-width:1100px)
+@media screen and (max-width:991.98px)
 {
-    // #bg-image{
-    //     height: 300px;
-    //     width: 100%
-    // }
-    #button{
-        width: 250px;
-        height: 90px;
+    #form{
+        position: static;
+        top: auto;
+        bottom: auto;
+        width: 70%;
+        margin-top: 50px; 
     }
-    
 }
 
 // Then import Bootstrap
